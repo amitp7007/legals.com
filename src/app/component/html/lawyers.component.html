@@ -1,0 +1,33 @@
+
+
+      <div class="page-header">
+          <h1>City Lawyers</h1>
+          <nav aria-label="...">
+              <ul class="pager">
+                <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+          <div class="row">
+      <div class="col-sm-8 col-md-4" *ngFor='let lawyer of lawyersList'>
+        <div class="thumbnail">
+            <div><img [src]=lawyer.imageSrc alt="..." height='200px' width="100%"></div>
+
+            <div class="caption">
+                <h3>{{lawyer.name}}</h3>
+              <div class="glyphicon glyphicon-star" aria-hidden="true">{{lawyer.rating}}</div>
+              <br/>
+                    {{lawyer.ltype}}
+                    <br/>
+                    {{lawyer.court}}
+                    <br/>
+                    {{lawyer.contact}}
+                    <br/>
+                    {{lawyer.rating}}
+                    <br/>
+                    {{lawyer.likes}}
+
+              </div>
+          </div>
+          </div>
+</div>
+

@@ -1,0 +1,33 @@
+<!--div class='panel panel-default'></div>
+  <div class='panel-heading'>
+    <h1 class='panel-title'>{{lawyers}}</h1>
+  </div -->
+
+      <div class="page-header">
+          <h1>Courts</h1>
+          <nav aria-label="...">
+              <ul class="pager">
+                <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+                <li class="next"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+          <div class="row">
+      <div class="col-sm-8 col-md-4" *ngFor='let court of courts'>
+        <div class="thumbnail">
+            <div><img [src]=court.imageUrl alt="..." height='200px' width="100%"></div>
+
+            <div class="caption">
+                <h3>{{court.courtTile}}</h3>
+              <br/>
+              {{court.courtType}}
+                    <br/>
+                    {{court.address}}
+                    <br/>
+                    {{court.city}}
+                    <br/>
+                    {{court.pin}}
+
+              </div>
+          </div>
+          </div>
+</div>
+
